@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+	<link
+		rel="icon"
+		href="#" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png" />
+
+		<link
+			rel="stylesheet"
+			href="style.css" />
+
+		<title>Frontend Mentor | E-commerce product page</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<container class="main-coniner">
+			<!-- -----------------------------------------------------header--------------------------- -->
+
+			<header class="header content-limit">
+				<!-- ---------- contain 1----- -->
+				<div class="header__holder limit sec-pad">
+					<nav class="nav">
+						<div class="nav__logo">
+							<figure class="nav__logo--img">
+								<img
+									src="images/icon-menu.svg"
+									alt="icon-menu" />
+							</figure>
+
+							<a class="nav__logo__title">sneakers</a>
+
+							<ul class="nav__links--two">
+								<li><a href="#">Collection</a></li>
+								<li><a href="#">Man</a></li>
+								<li><a href="#">Women</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+
+						<div class="nav__holder">
+							<img
+								src="images/icon-close.svg"
+								alt="" />
+							<ul class="nav__links">
+								<li><a href="#">Collections</a></li>
+								<li><a href="#">Man</a></li>
+								<li><a href="#">Women</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</nav>
+
+					<!-- ---------- contain 2----- -->
+					<div class="header__cart--profile">
+						<div class="header__cart">
+							<figure class="header__cart--img">
+								<img
+									src="images/icon-cart.svg"
+									alt="cart" />
+							</figure>
+							<p>3</p>
+						</div>
+
+						<figure class="header__profile">
+							<img
+								src="images/image-avatar.png"
+								alt="avatar" />
+						</figure>
+					</div>
+				</div>
+			</header>
+
+			<!-- --------------------------- cart notification container---------------->
+			<section class="cart content-limit cart-show">
+				<div class="cart__msg">
+					<a class="cart__msg--title">Cart</a>
+
+					<div class="cart__msg--product">
+						<figure class="product--img">
+							<img
+								src="images/image-product-1-thumbnail.jpg"
+								alt="" />
+						</figure>
+
+						<div class="cart__msg--product-detail">
+							<p>Fall Limited Edition sneakers</p>
+							<p>$125.00 X <span>$375.00</span></p>
+						</div>
+
+						<figure class="delete--img">
+							<img
+								src="images/icon-delete.svg"
+								alt="" />
+						</figure>
+					</div>
+
+					<button
+						class="cart__msg--btn"
+						type="button">
+						Checkout
+					</button>
+				</div>
+			</section>
+
+			<!-- ------------------ hero section ----------------------  -->
+			<section class="hero content-limit">
+				<section class="hero__container limit">
+					<div class="hero__container--img">
+						<div class="hero__container--img_list">
+							<img
+								class="current"
+								src="images/image-product-1.jpg"
+								alt="1" />
+							<img
+								src="images/image-product-2.jpg"
+								alt="2" />
+							<img
+								src="images/image-product-3.jpg"
+								alt="3" />
+							<img
+								src="images/image-product-4.jpg"
+								alt="4" />
+						</div>
+						<button
+							class="btn-left-hero"
+							type="button"
+							aria-label="scroll-next">
+							<img
+								src="images/icon-next.svg"
+								alt="next" />
+						</button>
+
+						<button
+							class="btn-right-hero"
+							type="button"
+							aria-label="scroll-previous">
+							<img
+								src="images/icon-previous.svg"
+								alt="previous" />
+						</button>
+					</div>
+
+					<!-- small image container -->
+
+					<div class="hero__small--img">
+						<figure class="small-active">
+							<img
+								src="images/image-product-1-thumbnail.jpg"
+								alt="1" />
+						</figure>
+
+						<figure>
+							<img
+								src="images/image-product-2-thumbnail.jpg"
+								alt="2" />
+						</figure>
+						<figure>
+							<img
+								src="images/image-product-3-thumbnail.jpg"
+								alt="3" />
+						</figure>
+						<figure>
+							<img
+								src="images/image-product-4-thumbnail.jpg"
+								alt="4" />
+						</figure>
+					</div>
+				</section>
+
+				<div class="hero__product limit sec-pad">
+					<a
+						href="#"
+						class="hero__product--company"
+						>SNEAKER COMPANY</a
+					>
+
+					<h2 class="hero__product--title">
+						Fall Limited Edition <span> sneakers</span>
+					</h2>
+
+					<p class="hero__product__para">
+						These low-profile sneakers are your perfect casual wear companion.
+						Featuring a durable rubber outer sole, they’ll withstand everything
+						the weather can offer.
+					</p>
+
+					<div class="hero__product--discounts">
+						<div>
+							<p class="price">$125.00</p>
+							<a
+								href="#"
+								class="discount"
+								>50%</a
+							>
+						</div>
+
+						<p class="expired-discoud">$250.00</p>
+					</div>
+					<div class="quanitity-holder">
+						<div class="hero__product--quntity">
+							<p class="minus">-</p>
+							<p class="quntity">0</p>
+							<p class="plus">+</p>
+						</div>
+						<button
+							class="add-to-cart"
+							type="button">
+							<img
+								src="images/cart.png"
+								alt="" />
+							Add to Carta
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- product popup section ----------------- -->
+			
+
+			
+				
+				<section class="hero__container popup-hero limit">
+					<img class="close"
+					src="images/icon-close.svg"
+					alt="" />
+					<div class="hero__container--img  popup-hero-img">
+						<div class="hero__container--img_list popup-img-list">
+							<img
+								class="current-popup"
+								src="images/image-product-1.jpg"
+								alt="1" />
+							<img
+								src="images/image-product-2.jpg"
+								alt="2" />
+							<img
+								src="images/image-product-3.jpg"
+								alt="3" />
+							<img
+								src="images/image-product-4.jpg"
+								alt="4" />
+						</div>
+						<button
+							class="btn-left-hero second-left"
+							type="button"
+							aria-label="scroll-next">
+							<img
+								src="images/icon-next.svg"
+								alt="next" />
+						</button>
+
+						<button
+							class="btn-right-hero second-right"
+							type="button"
+							aria-label="scroll-previous">
+							<img
+								src="images/icon-previous.svg"
+								alt="previous" />
+						</button>
+					</div>
+
+					<!-- small image container -->
+
+					<div class="hero__small--img popup-small">
+						<figure class="small-active">
+							<img
+								src="images/image-product-1-thumbnail.jpg"
+								alt="1" />
+						</figure>
+
+						<figure>
+							<img
+								src="images/image-product-2-thumbnail.jpg"
+								alt="2" />
+						</figure>
+						<figure>
+							<img
+								src="images/image-product-3-thumbnail.jpg"
+								alt="3" />
+						</figure>
+						<figure>
+							<img
+								src="images/image-product-4-thumbnail.jpg"
+								alt="4" />
+						</figure>
+					</div>
+				</section>
+				
+		</container>
+
+		<script src="app.js"></script>
+	</body>
+</html>
